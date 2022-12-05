@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #808080;
+  color: black;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.flush {
+  color: #fff;
+  margin:-10px -11px;
+}
+
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #808080;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: auto;
+  background-color: #808080;
+  width: 28%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="topnav">
+  <!-- Navbar Icon -->
+  <a href="index.html" class="navbar-brand">
+    <img
+      class="flush"
+      src="logo.png"
+      alt="logo"/>
+  </a>
+
+  <div class="subnav">
+    <button class="subnavbtn">Browse <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#featured">Featured</a>
+      <a href="#nearby">Nearby</a>
+      <a href="#allcategories">All Categories</a>
+    </div>
+  </div>
+
+
+  <a href="#chat">Chats</a>
+  <a href="#help">Help Center</a>
+  <a href="#upload">Upload</a>
+
+  <div class="topnav-right">
+      <a href="#name">Name</a>
+      <a href="#hall">Hall</a>
+    </div>
+</div>
+
+<!--containers-->
+<div class="w3-panel w3-gray w3-round-xlarge">
+  <footer style="font-size:30px">Bose Headphones</footer>
+    <img
+    class="center"
+    src="bose.jpg"
+    height="200"
+    width=auto/>
+  </div>
+<div class="w3-panel w3-gray w3-round-xlarge">
+  <footer style="font-size:30px">Air Force 1</footer>
+    <img
+    class="center"
+    src="af1.jpg"
+    height="200"
+    width=auto/>
+</div>
+<div class="w3-panel w3-gray w3-round-xlarge">
+  <footer style="font-size:30px">Yellow Kettle</footer>
+    <img
+    class="center"
+    src="yellowkettle.jpg"
+    height="200"
+    width=auto/>
+  </div>
+</body>
+</html>
